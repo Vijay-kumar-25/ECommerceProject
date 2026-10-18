@@ -34,6 +34,15 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
+            <!-- Allure BOM to align Allure adapters -->
+            <dependency>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-bom</artifactId>
+                <version>2.20.1</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -75,7 +84,6 @@
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-testng</artifactId>
-            <version>2.20.1</version>
             <scope>test</scope>
         </dependency>
 
@@ -83,7 +91,6 @@
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-cucumber7-jvm</artifactId>
-            <version>2.20.1</version>
             <scope>test</scope>
         </dependency>
 
