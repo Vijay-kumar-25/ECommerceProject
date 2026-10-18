@@ -8,7 +8,7 @@
 
     <dependencies>
 
-        <!-- Source: https://mvnrepository.com/artifact/org.testng/testng -->
+        <!-- TestNG -->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
@@ -16,14 +16,45 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- Source: https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+        <!-- REST-assured for API testing -->
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
             <version>5.3.0</version>
             <scope>test</scope>
         </dependency>
-        
+
+        <!-- Selenium for UI automation -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>4.11.0</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- WebDriverManager to manage browser drivers -->
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>5.4.0</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Allure TestNG adapter for reporting -->
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-testng</artifactId>
+            <version>2.21.0</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Jackson for JSON handling in tests -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.14.2</version>
+            <scope>test</scope>
+        </dependency>
 
     </dependencies>
 
