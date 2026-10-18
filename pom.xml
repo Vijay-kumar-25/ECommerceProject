@@ -92,20 +92,6 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- Apache POI for Excel utilities -->
-        <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi</artifactId>
-            <version>5.2.4</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi-ooxml</artifactId>
-            <version>5.2.4</version>
-            <scope>test</scope>
-        </dependency>
-
         <!-- Jackson for JSON handling in tests (aligned by BOM) -->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
