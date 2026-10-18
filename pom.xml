@@ -6,6 +6,28 @@
   <version>1.0-SNAPSHOT</version>
   <name>Archetype - ECommerceProject</name>
 
+    <dependencyManagement>
+        <dependencies>
+            <!-- Rest-Assured BOM to align transitive versions -->
+            <dependency>
+                <groupId>io.rest-assured</groupId>
+                <artifactId>rest-assured-bom</artifactId>
+                <version>5.3.0</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- Jackson BOM to avoid jackson version conflicts -->
+            <dependency>
+                <groupId>com.fasterxml.jackson</groupId>
+                <artifactId>jackson-bom</artifactId>
+                <version>2.15.2</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
     <dependencies>
 
         <!-- TestNG -->
@@ -48,11 +70,11 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- Jackson for JSON handling in tests -->
+        <!-- Jackson for JSON handling in tests (aligned by BOM) -->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.14.2</version>
+            <version>2.15.2</version>
             <scope>test</scope>
         </dependency>
 
