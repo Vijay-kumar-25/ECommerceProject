@@ -80,22 +80,6 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- Allure TestNG adapter for reporting -->
-        <dependency>
-            <groupId>io.qameta.allure</groupId>
-            <artifactId>allure-testng</artifactId>
-            <version>2.20.1</version>
-            <scope>test</scope>
-        </dependency>
-
-        <!-- Allure adapter for Cucumber 7 -->
-        <dependency>
-            <groupId>io.qameta.allure</groupId>
-            <artifactId>allure-cucumber7-jvm</artifactId>
-            <version>2.20.1</version>
-            <scope>test</scope>
-        </dependency>
-
         <!-- Cucumber BDD (versions aligned by cucumber-bom) -->
         <dependency>
             <groupId>io.cucumber</groupId>
@@ -112,13 +96,13 @@
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
-            <version>5.2.3</version>
+            <version>5.2.2</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
-            <version>5.2.3</version>
+            <version>5.2.2</version>
             <scope>test</scope>
         </dependency>
 
